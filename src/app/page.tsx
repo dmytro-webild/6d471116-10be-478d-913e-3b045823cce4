@@ -47,7 +47,7 @@ export default function LandingPage() {
           logoText="Lumière"
           description="Unveil your skin's natural radiance with our luxurious, science-backed skincare collection. Pure ingredients. Proven results. Timeless beauty."
           buttons={[
-            { text: "Explore Collection", href: "products" },
+            { text: "Shop Skincare Now", href: "products" },
             { text: "Learn Our Story", href: "about" }
           ]}
           background={{ variant: "sparkles-gradient" }}

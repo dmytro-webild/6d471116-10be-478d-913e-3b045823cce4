@@ -1,56 +1,20 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
-import { Halant } from "next/font/google";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ServiceWrapper } from "@/components/ServiceWrapper";
-import Tag from "@/tag/Tag";
 
-const manrope = Manrope({
-  variable: "--font-manrope",  subsets: ["latin"],
-});
-
-const halant = Halant({
-  variable: "--font-halant",  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Lumière Skincare | Luxury Natural Beauty Products",  description: "Discover premium skincare with 100% natural ingredients. Dermatologist-approved, eco-conscious beauty solutions for radiant, healthy skin.",  keywords: "skincare, natural beauty, luxury cosmetics, organic serum, moisturizer, beauty products",  metadataBase: new URL("https://lumiere-skincare.com"),
-  openGraph: {
-    title: "Lumière Skincare | Luxury Natural Beauty",    description: "Premium skincare crafted with nature's finest essences. Visible results in 4 weeks guaranteed.",    type: "website",    siteName: "Lumière Skincare",    images: [
-      {
-        url: "http://img.b2bpic.net/free-photo/top-view-tropical-leaves-vibrant-background-summer-flat-lay-composition_1182-2695.jpg",        alt: "Luxury skincare collection"
-      }
-    ]
-  },
-  twitter: {
-    card: "summary_large_image",    title: "Lumière Skincare | Natural Beauty Excellence",    description: "Transform your skin with premium, dermatologist-approved skincare.",    images: ["http://img.b2bpic.net/free-photo/top-view-tropical-leaves-vibrant-background-summer-flat-lay-composition_1182-2695.jpg"]
-  },
-  robots: {
-    index: true,
-    follow: true
-  }
-};
+  title: "Lumière Skincare",  description: "Unveil your skin's natural radiance with our luxurious, science-backed skincare collection."};
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <ServiceWrapper>
-        <body
-          className={`${manrope.variable} ${halant.variable} ${inter.variable} antialiased`}
-        >
-          <Tag />
-          {children}
-        
+    <html lang="en">
+      <body className={inter.className}>{children}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -1418,7 +1382,6 @@ export default function RootLayout({
           }}
         />
       </body>
-      </ServiceWrapper>
     </html>
   );
 }
