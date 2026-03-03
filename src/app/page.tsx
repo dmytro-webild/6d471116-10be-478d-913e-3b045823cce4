@@ -20,7 +20,7 @@ export default function LandingPage() {
       borderRadius="rounded"
       contentWidth="small"
       sizing="largeSmallSizeLargeTitles"
-      background="aurora"
+      background="circleGradient"
       cardStyle="gradient-bordered"
       primaryButtonStyle="double-inset"
       secondaryButtonStyle="solid"
@@ -50,7 +50,7 @@ export default function LandingPage() {
             { text: "Explore Collection", href: "products" },
             { text: "Learn Our Story", href: "about" }
           ]}
-          background={{ variant: "aurora" }}
+          background={{ variant: "sparkles-gradient" }}
           imageSrc="http://img.b2bpic.net/free-photo/top-view-tropical-leaves-vibrant-background-summer-flat-lay-composition_1182-2695.jpg"
           imageAlt="Luxury skincare products"
           mediaAnimation="blur-reveal"
@@ -193,7 +193,7 @@ export default function LandingPage() {
           title="Join Our Beauty Community"
           description="Subscribe to receive exclusive skincare tips, early access to new products, and special beauty offers delivered to your inbox."
           tagIcon={Heart}
-          background={{ variant: "aurora" }}
+          background={{ variant: "sparkles-gradient" }}
           useInvertedBackground={false}
           inputPlaceholder="your@email.com"
           buttonText="Subscribe"
