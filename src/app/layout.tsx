@@ -5,7 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Lumière Skincare",  description: "Unveil your skin's natural radiance with our luxurious, science-backed skincare collection."};
+  title: "Lumière Skincare",  description: "Unveil your skin's natural radiance with our luxurious, science-backed skincare collection."
+};
 
 export default function RootLayout({
   children,
