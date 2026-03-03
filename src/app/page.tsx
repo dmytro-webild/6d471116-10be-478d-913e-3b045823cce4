@@ -102,7 +102,7 @@ export default function LandingPage() {
 
       <div id="features" data-section="features">
         <FeatureBento
-          title="Why Choose Lumière"
+          title="ahoj vitaj tu"
           description="Our commitment to excellence sets us apart in the beauty industry."
           features={[
             {
